@@ -1,8 +1,8 @@
-- [] Deve ser possível criar um usuário
-- [] O usuário deve ter:
-  - [] Nome
-  - [] Email
-  - [] Senha
+- [x] Deve ser possível criar um usuário
+- [x] O usuário deve ter:
+  - [x] Nome
+  - [x] Email
+  - [x] Senha
 - [] Deve ser possível listar usuários
 - [] Deve ser possível autenticar o usuário
 - [] Deve ser possível atualizar dados do usuário autenticado
