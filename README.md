@@ -3,7 +3,6 @@
   - [x] Nome
   - [x] Email
   - [x] Senha
-- [] Deve ser possível listar usuários
 - [] Deve ser possível autenticar o usuário
 - [] Deve ser possível atualizar dados do usuário autenticado
 - [] Deve ser possível deletar usuário autenticado

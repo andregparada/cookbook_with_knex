@@ -2,6 +2,7 @@ import { FastifyInstance } from 'fastify'
 import { z } from 'zod'
 import { knex } from '../database'
 import { randomUUID } from 'node:crypto'
+import { checkSessionIdExists } from '../middlewares/check-session-id-exists'
 
 export async function usersRoutes(app: FastifyInstance) {
   app.post('/', async (request, reply) => {
@@ -40,4 +41,12 @@ export async function usersRoutes(app: FastifyInstance) {
 
     return reply.status(201).send()
   })
-}
+
+//   app.put(
+//     '/',
+//     { preHandler: [checkSessionIdExists] },
+//     async (request, reply) => {
+//       const users = await knex('users').select('*')
+//     },
+//   )
+// }
