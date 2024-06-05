@@ -3,7 +3,7 @@
   - [x] Nome
   - [x] Email
   - [x] Senha
-- [] Deve ser possível autenticar o usuário
+- [x] Deve ser possível autenticar o usuário
 - [] Deve ser possível atualizar dados do usuário autenticado
 - [] Deve ser possível deletar usuário autenticado
 - [] Deve ser possível criar um prato
