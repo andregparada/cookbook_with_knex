@@ -45,6 +45,8 @@ export async function usersRoutes(app: FastifyInstance) {
     return reply.status(201).send()
   })
 
+  // TODO atualizar com autenticação e login
+
   app.put(
     '/:id',
     { preHandler: [checkSessionIdExists] },
@@ -78,6 +80,20 @@ export async function usersRoutes(app: FastifyInstance) {
       })
 
       return reply.status(204).send()
+    },
+  )
+
+  app.delete(
+    '/:id',
+    { preHandler: [checkSessionIdExists] },
+    async (request, reply) => {
+      const paramsSchema = z.object({ id: z.string().uuid() })
+
+      const { id } = paramsSchema.parse(request.params)
+
+      await knex('users').where({ id }).delete()
+
+      return reply.status(201).send()
     },
   )
 }
