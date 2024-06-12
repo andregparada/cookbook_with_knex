@@ -1,9 +1,9 @@
 import { FastifyInstance } from 'fastify'
-import { z } from 'zod'
 import { knex } from '../database'
+import { z } from 'zod'
 import { randomUUID } from 'node:crypto'
-import { checkSessionIdExists } from '../middlewares/check-session-id-exists'
 import { hash } from 'bcryptjs'
+import { checkSessionIdExists } from '../middlewares/check-session-id-exists'
 
 export async function usersRoutes(app: FastifyInstance) {
   app.post('/', async (request, reply) => {

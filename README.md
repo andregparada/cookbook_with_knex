@@ -4,15 +4,15 @@
   - [x] Email
   - [x] Senha
 - [x] Deve ser possível autenticar o usuário
-- [] Deve ser possível atualizar dados do usuário autenticado
-- [] Deve ser possível deletar usuário autenticado
+- [x] Deve ser possível atualizar dados do usuário autenticado
+- [x] Deve ser possível deletar usuário autenticado
 - [] Deve ser possível criar um prato
 - [] O prato deve ter:
-  - [] Título
-  - [] Descrição Opcional
+  - [x] Título
+  - [x] Descrição Opcional
   - [] Ingredientes
-  - [] Modo de preparo
-  - [] Duração de preparo Opcional
+  - [x] Modo de preparo
+  - [x] Duração de preparo Opcional
   - [] Dificuldade de preparo Opcional
   - [] Preço médio do prato Opcional
   - [] Utensílios especiais necessários Opcional
