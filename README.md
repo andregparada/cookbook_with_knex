@@ -13,9 +13,8 @@
   - [] Ingredientes
   - [x] Modo de preparo
   - [x] Duração de preparo Opcional
-  - [] Dificuldade de preparo Opcional
-  - [] Preço médio do prato Opcional
-  - [] Utensílios especiais necessários Opcional
+  - [x] Dificuldade de preparo Opcional
+  - [x] Preço médio do prato Opcional
 - [] Deve ser possível atualizar um prato de usuário autenticado
 - [] Deve ser possível listar pratos por usuário
 - [] Deve ser possível pesquisar prato pelo título
