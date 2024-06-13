@@ -17,5 +17,5 @@ export async function up(knex: Knex): Promise<void> {
 }
 
 export async function down(knex: Knex): Promise<void> {
-  await knex.schema.dropTable('ingredients')
+  await knex.schema.dropTable('dish_ingredients')
 }

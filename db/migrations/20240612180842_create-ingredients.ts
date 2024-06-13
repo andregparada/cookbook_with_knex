@@ -4,7 +4,7 @@ export async function up(knex: Knex): Promise<void> {
   await knex.schema.createTable('ingredients', (table) => {
     table.uuid('id').primary()
     table.string('name', 255).notNullable()
-    table.decimal('price')
+    table.decimal('price', 10, 2)
   })
 }
 

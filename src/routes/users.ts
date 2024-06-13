@@ -38,7 +38,7 @@ export async function usersRoutes(app: FastifyInstance) {
       id: randomUUID(),
       name,
       email,
-      password: hashedPassword,
+      hashed_password: hashedPassword,
       session_id: sessionId,
     })
 
@@ -76,7 +76,7 @@ export async function usersRoutes(app: FastifyInstance) {
       await knex('users').where({ id }).update({
         name,
         email,
-        password: hashedPassword,
+        hashed_password: hashedPassword,
       })
 
       return reply.status(204).send()
