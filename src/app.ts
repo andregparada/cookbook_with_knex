@@ -2,7 +2,7 @@ import fastify from 'fastify'
 import cookie from '@fastify/cookie'
 
 import { usersRoutes } from './routes/users'
-import { mealsRoutes } from './routes/meals'
+import { dishesRoutes } from './routes/dishes'
 import { env } from './env'
 import { ZodError } from 'zod'
 
@@ -12,8 +12,8 @@ app.register(cookie)
 app.register(usersRoutes, {
   prefix: 'users',
 })
-app.register(mealsRoutes, {
-  prefix: 'meals',
+app.register(dishesRoutes, {
+  prefix: 'dishes',
 })
 
 app.setErrorHandler((error, _, reply) => {
